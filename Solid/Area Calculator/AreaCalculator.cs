@@ -2,7 +2,7 @@
 
 public class AreaCalculator {
 
-    public double TotalArea(Shape[] shapes)
+    public double TotalArea(List<Shape> shapes)
     {
         double area = 0;
         foreach (Shape shape in shapes)

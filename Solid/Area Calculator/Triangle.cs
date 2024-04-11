@@ -1,12 +1,16 @@
 ﻿public class EquilateralTriangle : Shape {
 
-    private double SideA;
-    
-    private double Height;
+    private double Side { get; set; }
+    private double Height { get; set; }
 
+    public EquilateralTriangle(double side, double height) { 
+    
+        Side = side;
+        Height = height;
+    }
     public override double Area()
     {
-        return (SideA * Height)/2;
+        return (Side * Height)/2;
     }
 
 }
